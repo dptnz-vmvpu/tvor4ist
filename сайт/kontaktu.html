@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти</title>
+    <style>
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(180deg, 
+                #ffe5d9 0%,
+                #f4d1c6 15%,
+                #e8c4b8 30%,
+                #d4b8c8 45%,
+                #c0acc8 60%,
+                #b0a0d0 75%,
+                #a094d8 100%
+            );
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            min-height: 100vh;
+            color: #2c3e50;
+        }
+
+        header {  
+            background-image: url('Фон.webp');  
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;  
+            padding: 15px 0;  
+            text-align: center;
+        }
+        h1 {  
+            color: #00ffea;  
+        } 
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            margin-bottom: 40px;
+            border: 2px solid transparent;
+            border-image: linear-gradient(to bottom, 
+                #ffe5d9,
+                #f4d1c6,
+                #e8c4b8,
+                #d4b8c8,
+                #c0acc8,
+                #b0a0d0
+            ) 1;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            color: #2c3e50;
+        }
+
+        section h2 {
+            color: #2c3e50;
+        }
+
+        section p {
+            color: #2c3e50;
+        }
+
+        section a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+
+        section a:hover {
+            color: #357abd;
+            text-decoration: underline;
+        }
+
+        section::before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(to right, 
+                #ffe5d9,
+                #f4d1c6,
+                #e8c4b8,
+                #d4b8c8,
+                #c0acc8,
+                #b0a0d0
+            );
+            z-index: 1;
+        }
+
+        section::after {
+            content: '';
+            position: absolute;
+            bottom: -40px;
+            left: 0;
+            right: 0;
+            height: 40px;
+            background: linear-gradient(to bottom, 
+                rgba(255, 229, 217, 0.6),
+                rgba(244, 209, 198, 0.5),
+                rgba(232, 196, 184, 0.6),
+                rgba(212, 184, 200, 0.5),
+                rgba(192, 172, 200, 0.6),
+                rgba(176, 160, 208, 0.5)
+            );
+            z-index: -1;
+            border-radius: 0 0 10px 10px;
+        }
+
+        main {
+            position: relative;
+        }
+
+        main::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 8px;
+            background: linear-gradient(to right, 
+                #ffe5d9 0%,
+                #f4d1c6 20%,
+                #e8c4b8 40%,
+                #d4b8c8 60%,
+                #c0acc8 80%,
+                #b0a0d0 100%
+            );
+            z-index: 1;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #ffd700;
+            color: #0057b7;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ffc107;
+        }
+
+        footer {  
+            text-align: center;  
+            padding: 10px 0;  
+            background: linear-gradient(to right, 
+                #a094d8,
+                #b0a0d0,
+                #c0acc8,
+                #d4b8c8,
+                #e8c4b8,
+                #f4d1c6
+            );
+            color: #2c3e50;  
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Контакти</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="audio.html">Біографія</a></li>
+                <li><a href="video.html">Творчість</a></li>
+                <li><a href="kontaktu.html">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <h2>Наші контакти</h2>
+            <p><strong>Адреса коледжа:</strong> м. Вінниця, вул. Стрілецька, 5</p>
+            <p><strong>Телефон автора:</strong> <a href="tel:+380977160283">+380977160283</a></p>
+            <p><strong>Email автора:</strong> 45_24_metelskyi@vmvpu.vn.ua</p>
+            <p><strong>Інстаграм автора:</strong> <a href="https://www.instagram.com/artem_metelskiy?igsh=OWRyMTZjYjRvM3pp">Інстаграм</a></p>
+
+            <p><strong>Email коледжа:</strong> vmvpu.vn.ua@gmail.com</p>
+            <p><strong>Сайт коледжа:</strong> <a href="http://vmvpu.vn.ua/">КЗ "ВПКЦТТП"</a></p>
+            <p><strong>Інстаграм коледжа:</strong> <a href="https://www.instagram.com/vmvpu/">Інстаграм</a></p>
+            <p><strong>Фейсбук коледжа:</strong> <a href="https://www.facebook.com/dptnzvmvpu/">Фейсбук</a></p>
+            <p><strong>Телеграм коледжа:</strong> <a href="https://t.me/vmvpu">Телеграм</a></p>
+
+        </section>
+
+        <section class="contact-form">
+            <h2>Напишіть нам</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Повідомлення:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Відправити</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Творчість Василя Стуса</p>
+    </footer>
+</body>
+</html>
